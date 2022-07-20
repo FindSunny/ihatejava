@@ -55,7 +55,7 @@
 
         - On the other hand, **optimize the GC process design.**
 
-            >Then you got `c`, and `GC Process`
+            >Then you got `Heap Regions`, and `GC Process`
 
             - Heap Regions
                 - Young Region
