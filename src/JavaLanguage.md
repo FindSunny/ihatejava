@@ -111,3 +111,8 @@
 ## Speed Up since now!
 
 ---
+
+- [Using Operators in Your Programs](https://dev.java/learn/using-operators-in-your-programs/)
+    - Boring!
+    > instanceof: can be used to Classes, Superclasses and Interfaces
+
