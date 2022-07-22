@@ -106,13 +106,63 @@
         - Ha~! This is funny, Java turns to Javascript, but limited.
 
             > Only `local variables with initializers` can be declared with the `var` type.
+    
+    > ***Speed Up since now!!!!***
 
----
-## Speed Up since now!
+    - [Using Operators in Your Programs](https://dev.java/learn/using-operators-in-your-programs/)
+        - Boring! [Check Summary](https://dev.java/learn/summary-of-operators/)
+        > instanceof: can be used to Classes, Superclasses and Interfaces
+    
+    - [Expressions, Statements and Blocks](https://dev.java/learn/expressions-statements-and-blocks/)
+        - Boring!
+        > ***Notice***: [Floating Point Arithmetic is gross](https://www.youtube.com/watch?time_continue=39&v=ajaHQ9S4uTA&feature=emb_logo). Think about the code below:
 
----
+            double d1 = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1;
+            System.out.println("d1 == 1 ? " + (d1 == 1.0));
+        > 
 
-- [Using Operators in Your Programs](https://dev.java/learn/using-operators-in-your-programs/)
-    - Boring!
-    > instanceof: can be used to Classes, Superclasses and Interfaces
+    - [Control Flow Statements](https://dev.java/learn/control-flow-statements/)
+        - Boring!
+        
+        > `if` `for` `while` `do-while` `break` `continue` `return` `yield`
 
+        > Think about the code below:
+
+            // infinite loop
+            for ( ; ; ) {
+                // do something
+            }
+
+            // the enhanced for to loop
+            int[] myArray = {1, 2, 3};
+            for (int i : myArray) {
+                System.out.println(i);
+            }
+    - [Branching with Switch Statements](https://dev.java/learn/branching-with-switch-statements/)
+        - Boring!
+
+    - [Branching with Switch Expressions](https://dev.java/learn/branching-with-switch-expressions/)
+        - Boring!
+
+                int quarter = ...; // any value
+
+                String quarterLabel =
+                    switch (quarter) {
+                        case 0  -> "Q1 - Winter";
+                        case 1  -> "Q2 - Spring";
+                        case 2  -> "Q3 - Summer";
+                        case 3  -> "Q3 - Summer";
+                        default -> "Unknown quarter";
+                    };
+                
+
+                int quarter = ...; // any value
+                String quarterLabel =
+                    switch (quarter) {
+                        case 0 :  yield "Q1 - Winter";
+                        case 1 :  yield "Q2 - Spring";
+                        case 2 :  yield "Q3 - Summer";
+                        case 3 :  yield "Q3 - Summer";
+                        default: System.out.println("Unknown quarter");
+                                yield "Unknown quarter";
+                    };
