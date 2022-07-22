@@ -166,3 +166,47 @@
                         default: System.out.println("Unknown quarter");
                                 yield "Unknown quarter";
                     };
+
+    - [Using Record to Model Immutable Data](https://dev.java/learn/using-record-to-model-immutable-data/)
+        
+        - "You can't ...You can't...You can't..."
+
+        - ***I do not like this feature.***
+
+    - [Classes and Objects](https://dev.java/learn/classes-and-objects/)
+
+        - [Creating Classes](https://dev.java/learn/creating-classes/)
+            > the first letter of a class name should be capitalized, 
+            
+            > and the first (or only) word in a method name should be a verb.
+
+        - [Defining Methods](https://dev.java/learn/defining-methods/)
+            - Boring!
+
+        - [Providing Constructors for your Classes](https://dev.java/learn/providing-constructors-for-your-classes/)
+            - Boring!
+
+        - [Calling Methods and Constructors](https://dev.java/learn/calling-methods-and-constructors/)
+            - Funny!
+            > ***Notice***: Any changes to the values of the parameters exist only within the scope of the method. Both the primitive and reference types are passed by value. ***After the method returns, the values of the parameters are unchanged.***
+
+                public void moveCircle(Circle circle, int deltaX, int deltaY) {
+                    // code to move origin of circle to x+deltaX, y+deltaY
+                    circle.setX(circle.getX() + deltaX);
+                    circle.setY(circle.getY() + deltaY);
+                        
+                    // code to assign a new reference to circle
+                    circle = new Circle(0, 0);
+                }
+
+                moveCircle(myCircle, 23, 56)
+        
+        - [Creating and Using Objects](https://dev.java/learn/creating-and-using-objects/)
+            
+            > ***GC POINT:*** You can explicitly drop an object reference by setting the variable to the special value `null`.
+
+        - [More on Classes](https://dev.java/learn/more-on-classes/)
+
+            > *Nothing new here.*
+
+        - [Nested Classes](https://dev.java/learn/nested-classes/)
