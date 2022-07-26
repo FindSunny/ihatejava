@@ -339,7 +339,11 @@
                 
             > This feature reminds me of [a speech](https://www.inrrp.com.cn/html/1bf48c3bd22bfb3e.html).
 
-                    “Here you may be delegates of your governments, busine people, organizers, reporters or politicians.But, really, you’re mothers and fathers, sisters and brothers, aunts and uncles and all of you are someone’s child.I’m only a child, yet I know we are all part of a family, 5 billion strong, in fact 30 million species strong.And borders and governments will never change that.I’m only a child, yet I know we are all in this together and should act as one single world towards one single goal.”
+                “Here you may be delegates of your governments, busine people, organizers, reporters or politicians.
+                But, really, you’re mothers and fathers, sisters and brothers, aunts and uncles and all of you are someone’s child.
+                I’m only a child, yet I know we are all part of a family, 5 billion strong, in fact 30 million species strong.
+                And borders and governments will never change that.
+                I’m only a child, yet I know we are all in this together and should act as one single world towards one single goal.”
 
 
 
