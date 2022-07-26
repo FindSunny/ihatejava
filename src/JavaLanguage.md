@@ -209,4 +209,138 @@
 
             > *Nothing new here.*
 
-        - [Nested Classes](https://dev.java/learn/nested-classes/)
+        - [Nested Classes](https://dev.java/learclsn/nested-classes/)
+
+            - Boring! *(Be careful with this feature.)*
+
+        - [When to Use Nested Classes, Local Classes, Anonymous Classes, and Lambda Expressions](https://dev.java/learn/when-to-use-nested-classes-local-classes-anonymous-classes-and-lambda-expressions/)
+            - Boring!
+
+    - Numbers and Strings
+        - [Numbers](https://dev.java/learn/numbers/)
+
+            - What is a Number?
+                > All of the numeric wrapper classes are ***subclasses of the abstract class*** Number: `Byte, Short, Integer, Long, Float, Double, BigInteger, BigDecimal`
+
+            - How to format it?
+                > Formatting Numeric Print Output:
+
+                    System.out.format("The value of " + "the float variable is " +
+                    "%f, while the value of the " + "integer variable is %d, " +
+                    "and the string is %s", floatVar, intVar, stringVar); 
+
+                > The DecimalFormat Class:
+
+                    import java.text.*;
+
+                    public class DecimalFormatDemo {
+
+                        static public void customFormat(String pattern, double value ) {
+                            DecimalFormat myFormatter = new DecimalFormat(pattern);
+                            String output = myFormatter.format(value);
+                            System.out.println(value + "  " + pattern + "  " + output);
+                        }
+
+                        static public void main(String[] args) {
+
+                            customFormat("###,###.###", 123456.789);
+                            customFormat("###.##", 123456.789);
+                            customFormat("000000.000", 123.78);
+                            customFormat("$###,###.###", 12345.67);  
+                        }
+                    }
+
+            - How to compute it?
+                > · Arithmetic operators: +, -, *, /, and %.
+
+                > · The Math class
+
+                > ***Remember***: Allways use the Value of the variable in the computation.
+            - Random a number?
+                >  `0.0 <= Math.random() < 1.0.`
+        - [Characters](https://dev.java/learn/characters/)
+            > Boring!
+
+            > Tools you can use:
+                >1. ***boolean isLetter***(char ch) and ***boolean isDigit***(char ch) : Determines whether the specified char value is a letter or a digit, respectively.
+                >2. ***boolean isWhitespace***(char ch): Determines whether the specified char value is white space.
+                >3. ***boolean isUpperCase***(char ch) and ***boolean isLowerCase***(char ch): Determines whether the specified char value is uppercase or lowercase, respectively.
+                >4. ***char toUpperCase***(char ch) and ***char toLowerCase***(char ch): Returns the uppercase or lowercase form of the specified char value.
+                >5. ***toString(char ch)***: Returns a String object representing the specified character value — that is, a one-character string.
+
+        - [Strings](https://dev.java/learn/strings/)
+
+            - Boring!!!
+
+            - Converting Strings to Numbers
+                
+                    // convert strings to numbers
+                    float a = (Float.valueOf(args[0])).floatValue(); 
+                    float b = (Float.valueOf(args[1])).floatValue();
+            - Getting Characters and Substrings by Index
+
+                    String anotherPalindrome = "Niagara. O roar again!"; 
+                    // 11 <= index <= 14(15-1)
+                    String roar = anotherPalindrome.substring(11, 15);
+            
+        - [String Builders](https://dev.java/learn/string-builders/#length-capacity)
+            - Not recommended! *(After Java SE9 only, String is better.)*
+
+        - [Autoboxing and Unboxing](https://dev.java/learn/autoboxing-and-unboxing/)
+            - Basically, it is a way to convert primitive types to wrapper classes and vice versa.
+            
+            > int -> Integer, double -> Double, etc.
+
+            > Boring, too!
+
+    - [Inheritance](https://dev.java/learn/inheritance/)(一生二)
+        
+        - Inheritance
+            > Nothing new here.
+
+        - Overriding and Hiding Methods
+            > ***The point is The Overriding priority.***
+
+            > Instance methods > Interface methods > Superclass methods > Default methods
+
+            > ***Static methods***: The version of the hidden static method that gets invoked depends on whether it is invoked from the superclass or the subclass.
+
+        - [Polymorphism](https://dev.java/learn/polymorphism/)
+            > Choosing the right method to execute at run time.
+
+            > ***My brain blows up here.***
+
+            > *They told me that `Encapsulation`, `Inheritance`, and `Polymorphism` are the keys to understanding the Java OOP. It's true. But in my opinion, `Object`, `Class`, and `Package` are the key points to the Java OOP ecosystem. They make Java programming alive.*
+        
+        - [Object as a Superclass](https://dev.java/learn/object-as-a-superclass/)
+            > *Eva&YaDang*'s Capabilities.
+        
+        - [Abstract Methods and Classes](https://dev.java/learn/abstract-methods-and-classes/)
+
+            > ***When you do feel not elegance with Interface, Please consider Abstract Class(Method).***
+
+    - [Interfaces](https://dev.java/learn/interfaces/)
+        - Interfaces
+            > All abstract, default, and static methods in an interface are implicitly `public`, so you can omit the `public` modifier.
+
+            > All constant values defined in an interface are implicitly `public`, `static`, and `final`. Once again, you can omit these modifiers.
+
+        - Implementing an Interface
+
+            > (Normal stuffs.)
+
+            > ***Default Methods***
+                >Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces
+            
+            > ***[Integrating Default Methods into Existing Libraries](https://dev.java/learn/implementing-an-interface/#anchor_7)***
+                > I don't like this feature. I'll read this later.
+
+        - ***[Using an Interface as a Type](https://dev.java/learn/using-an-interface-as-a-type/)***
+                
+            > This feature reminds me of [a speech](https://www.inrrp.com.cn/html/1bf48c3bd22bfb3e.html).
+
+                    “Here you may be delegates of your governments, busine people, organizers, reporters or politicians.But, really, you’re mothers and fathers, sisters and brothers, aunts and uncles and all of you are someone’s child.I’m only a child, yet I know we are all part of a family, 5 billion strong, in fact 30 million species strong.And borders and governments will never change that.I’m only a child, yet I know we are all in this together and should act as one single world towards one single goal.”
+
+
+
+
