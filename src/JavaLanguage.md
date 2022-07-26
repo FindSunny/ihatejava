@@ -337,7 +337,7 @@
 
         - ***[Using an Interface as a Type](https://dev.java/learn/using-an-interface-as-a-type/)***
                 
-            > This feature reminds me of [a speech](https://www.inrrp.com.cn/html/1bf48c3bd22bfb3e.html).
+            > This feature reminds me of [a speech](https://www.troup.org/userfiles/929/My%20Files/ELA/MS%20ELA/7th%20ELA/Unit%204/Persuasive%20Speech%20that%20silenced%20the%20world%20w%20questions.pdf?id=24256).
 
                 “Here you may be delegates of your governments, busine people, organizers, reporters or politicians.
                 But, really, you’re mothers and fathers, sisters and brothers, aunts and uncles and all of you are someone’s child.
