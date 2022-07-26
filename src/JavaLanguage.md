@@ -19,11 +19,11 @@
         > In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses
     
     - What is an Interface?
-        > 二生三
+        > 二生三 (Maybe not, after I learned about interfaces)
 
         > *Always be cool.* Implementing an interface allows a class to become more formal about the behavior it promises to provide. 
     - What is a Package?
-        >三生万物
+        >三生万物 (I think this is <二生三>. 3 is chaos.)
 
         > A package is a namespace that organizes a set of related classes and interfaces.
 
