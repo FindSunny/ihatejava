@@ -345,6 +345,43 @@
                 And borders and governments will never change that.
                 I’m only a child, yet I know we are all in this together and should act as one single world towards one single goal.”
 
+    - [Generics](https://dev.java/learn/generics/)
 
+        - Introducing Generics
+            > ***Generics***: Generics makes your code more flexible and easy to reuse.
+            - 1. Stronger type checks at compile time. 
+            - 2. Elimination of casts(Get rid of casts).
+            - 3. Enabling programmers to implement generic algorithms(一生二).
+            > ***Notice***:
+            - Generic Methods：
 
+                    public static <K, V> boolean compare(Pair<K, V> p1, Pair<K, V> p2) {
+                        return p1.getKey().equals(p2.getKey()) &&
+                            p1.getValue().equals(p2.getValue());
+                    }
+
+                    boolean same = Util.<Integer, String>compare(p1, p2);
+            - Bounded Type Parameters:
+
+                    public <U extends Number> void inspect(U u){
+                        System.out.println("T: " + t.getClass().getName());
+                        System.out.println("U: " + u.getClass().getName());
+                    }
+            - ***Generics, Inheritance, and Subtypes***:
+                > You must notice what Subtypes are.
+                
+                    public void someMethod(Number n) { /* ... */ }
+
+                    someMethod(new Integer(10));   // OK
+                    someMethod(new Double(10.1));   // OK
+
+                    Box<Number> box = new Box<Number>();
+                    box.add(new Integer(10));   // OK
+                    box.add(new Double(10.1));  // OK
+
+                    public void boxTest(Box<Number> n) { /* ... */ }
+
+                    boxTest(new Box<Integer>());   // NG
+                    boxTest(new Box<Double>());   // NG
+                > Because that `Box<Integer>` and `Box<Double>` are not subtypes of `Box<Number>`.
 
