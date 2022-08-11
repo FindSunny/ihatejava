@@ -384,5 +384,35 @@
                 boxTest(new Box<Integer>());   // NG
                 boxTest(new Box<Double>());   // NG
             > Because that `Box<Integer>` and `Box<Double>` are not subtypes of `Box<Number>`.
-    - 
+- # [Lambda Expressions](https://dev.java/learn/lambda-expressions/)
+
+    - [Writing Your First Lambda Expression](https://dev.java/learn/writing-your-first-lambda-expression/)
+
+        >  Java Lambda Expressions are different from Javascript's Function Expressions.
+        
+        >  `Java Lambda Expressions` = `Functional interfaces` + `The implement sytax`.
+        
+        >`Functional interfaces` = `An interface` + `Only one abstract method`
+
+        > Java Lambda Expressions are the implementation of the abstract methods.
+        So just play them like instance methods calling.
+
+                List<String> retainStringsOfLength3(List<String> strings) {
+
+                Predicate<String> predicate = s -> s.length() == 3;
+                List<String> stringsOfLength3 = new ArrayList<>();
+                for (String s: strings) {
+                    if (predicate.test(s)) {
+                        stringsOfLength3.add(s);
+                    }
+                }
+                return stringsOfLength3;
+            }
+
+    - [Using Lambdas Expressions in Your Application](https://dev.java/learn/using-lambdas-expressions-in-your-application/)
+
+        >1
+
+
+
 
