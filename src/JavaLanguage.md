@@ -397,22 +397,29 @@
         > Java Lambda Expressions are the implementation of the abstract methods.
         So just play them like instance methods calling.
 
-                List<String> retainStringsOfLength3(List<String> strings) {
+            List<String> retainStringsOfLength3(List<String> strings) {
 
-                    Predicate<String> predicate = s -> s.length() == 3;
-                    List<String> stringsOfLength3 = new ArrayList<>();
-                    for (String s: strings) {
-                        if (predicate.test(s)) {
-                            stringsOfLength3.add(s);
-                        }
+                Predicate<String> predicate = s -> s.length() == 3;
+                List<String> stringsOfLength3 = new ArrayList<>();
+                for (String s: strings) {
+                    if (predicate.test(s)) {
+                        stringsOfLength3.add(s);
                     }
-                    return stringsOfLength3;
                 }
+                return stringsOfLength3;
+            }
 
     - [Using Lambdas Expressions in Your Application](https://dev.java/learn/using-lambdas-expressions-in-your-application/)
 
-        >
+        > Last cpater let us konw what is `Lambda Expression`. Ok, I know.
 
+        > Thus This capter is teaching us about `Discovering the java.util.function package`, yes you're right, They want us to use thire package.
+        
+        > emmmmmmmmmm... *It's up to you.*
+
+        > ***I think this is more like Javascript. Hia~Hia~***
+
+    
 
 
 
